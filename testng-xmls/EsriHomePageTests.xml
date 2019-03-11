@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Esri Homepage Test Suite" preserve-order="true"
+	parallel="tests" thread-count="2">
+
+	<test name='EsriHomePageAdobeAnalyticScriptsTest'>
+		<parameter name="bType" value="chrome" />
+		<classes>
+			<class name="com.esri.tests.esri.EsriHomePageAdobeAnalyticsTest" />
+		</classes>
+	</test>
+
+	<test name='EsriHomePageIndustriesMegamenuOnChrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="esri/EsriHomePageIndustriesTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.esri.tests.esri.EsriHomePageIndustriesMegamenuTest" />
+		</classes>
+	</test>
+
+	<test name='EsriHomePageProductsMegamenuOnChrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="esri/EsriHomePageProductsTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.esri.tests.esri.EsriHomePageProductsMegamenuTest" />
+		</classes>
+	</test>
+
+	<test name='EsriHomePageSupportMegamenuOnChrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="esri/EsriHomePageSupportTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.esri.tests.esri.EsriHomePageSupportMegamenuTest" />
+		</classes>
+	</test>
+
+	<test name='EsriHomePageAboutMegamenuOnChrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="esri/EsriHomePageAboutTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.esri.tests.esri.EsriHomePageAboutMegamenuTest" />
+		</classes>
+	</test>
+
+
+	<test name='EsriHomePageCommunityMegamenuOnChrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="esri/EsriHomePageCommunityTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.esri.tests.esri.EsriHomePageCommunityMegamenuTest" />
+		</classes>
+	</test>
+
+
+	<test name='EsriHomePageFootersLinksTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName"
+			value="esri/EsriHomePageFooterAndSocialLinksTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.esri.tests.esri.EsriHomePageFooterLinksTest" />
+		</classes>
+	</test>
+
+	<test name='EsriHomePageSocialLinksTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName"
+			value="esri/EsriHomePageFooterAndSocialLinksTestData.csv" />
+		<parameter name="startRow" value="2" />
+		<parameter name="endRow" value="2" />
+		<classes>
+			<class name="com.esri.tests.esri.EsriHomePageSocialLinksTest" />
+		</classes>
+	</test>
+
+	<test name='EsriHomePageChangeLanguageTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName"
+			value="esri/EsriHomePageFooterAndSocialLinksTestData.csv" />
+		<parameter name="startRow" value="3" />
+		<parameter name="endRow" value="3" />
+		<classes>
+			<class name="com.esri.tests.esri.EsriHomePageChangeLanguageTest" />
+		</classes>
+	</test>
+	<listeners>
+		<listener class-name="com.esri.qa.reporting.ExtentReporter" />
+		<listener class-name="com.esri.qa.reporting.ReportListener" />
+	</listeners>
+
+</suite> 

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ecommerce Test Suite" preserve-order="true" parallel="tests"
+	thread-count="2">
+
+	<test name='MYEsriSite Dashboard Test On chrome ForESRIAdmin'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="myesri/DashboardMyProfileTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.esri.tests.myesri.dashboard.DashboardTest" />
+		</classes>
+	</test>
+
+	<test name='MYEsriSite MyProfile Test On chrome ForESRIAdmin'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="myesri/DashboardMyProfileTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.esri.tests.myesri.myprofile.MyProfileTest" />
+		</classes>
+	</test>
+
+	<test name='MYESRI Smoke Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="myesri/MyOrganizationTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="Transactions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.myesri.myorganization.TransactionsTest" />
+		</classes>
+	</test>
+
+	<test name='WhereNext Magazine Smoke Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName"
+			value="wherenextmagazine/WhereNextMagazineTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="Where-Next-Magazine" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="com.esri.tests.wherenextmagazine.WhereNextMagazineHomePageTests" />
+		</classes>
+	</test>
+
+	<test name='WhereNext Magazine Footers Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="esrinew/FootersTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.esri.tests.esrinew.FooterLinksTest" />
+		</classes>
+	</test>
+
+	<test name='WhereNext Magazine Social links Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="esrinew/EsriSocialLinksTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.esri.tests.esrinew.SocialLinksTest" />
+		</classes>
+	</test>
+
+	<test name='ESRI Training Smoke Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="training/MyLearningPageData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="TrainingSite" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.training.mylearning.MyLearningPageTest" />
+		</classes>
+	</test>
+
+
+	<test name='ESRI Training Course Registration Page On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="training/TrainingSite.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.esri.tests.training.catalog.CourseRegistrationPageTest" />
+		</classes>
+	</test>
+
+	<test name='ESRI Training - Main Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="training/MainPageData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="TrainingSite" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.training.main.MainPageTest" />
+		</classes>
+	</test>
+
+
+	<test name='Ecommerce Test On WithOut Login US'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="WithOutLogin" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On After Login US'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="AfterLogin" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Withot Login Panama English'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="6" />
+		<parameter name="endRow" value="6" />
+		<groups>
+			<run>
+				<include name="WithOutLogin" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+
+	<test name='Ecommerce Test On After Login Panama English'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="6" />
+		<parameter name="endRow" value="6" />
+		<groups>
+			<run>
+				<include name="AfterLogin" />
+
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+
+	<test name='Ecommerce Test On Product Quantity Panama English'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="6" />
+		<parameter name="endRow" value="6" />
+		<groups>
+			<run>
+				<include name="ProductQuantity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+
+	<test name='ImageSubmissionPortalOnChrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="url"
+			value="http://www.esri.com/events/image-submissions#/home" />
+		<parameter name="fileName" value="isp/ImageSubPortal.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="Image-submission-portal" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.esri.tests.isp.ImageSubPortalPageTest" />
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="com.esri.qa.reporting.ExtentReporter" />
+		<listener class-name="com.esri.qa.reporting.ReportListener" />
+	</listeners>
+
+</suite> 
+ 

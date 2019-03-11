@@ -1,0 +1,4 @@
+TestCaseNo,TestClassName,TestCaseName,TestDescription,url,pageTitle,pageHeader,username,password,dashboardTitle,learningActivityTitle,scheduleTitle,learningPlansTitle,wishListTitle,learningActivitySearchKeyword,wistListPageFilterName,howToAccessTitle,downloadScriptPageUrl
+1,com.esri.tests.training.mylearning.MyLearningPageTest,training--MyLearningPageTest,mylearning,https://www.esri.com/training/,Esri Training | Your Location for Lifelong Learning,Training,trainingtest1,Test1234,Your Esri Training Learning Dashboard,Manage Your Esri Training Records,Your Upcoming Esri Training Events,Track Your Esri Learning Plan Progress,"
+
+Your Esri Training Learning Dashboard",ArcGIS,Web Course,Organize Your Esri Training Wish List,https://www.esri.com/training/LearningTranscript/?username=trainingtest1

@@ -1,0 +1,11 @@
+/.gradle/
+/build/
+/bin/
+.settings
+.classpath
+.project
+settings.gradle
+.DS_STORE
+test-output
+*.har
+*.html

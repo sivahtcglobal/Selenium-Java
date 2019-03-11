@@ -1,0 +1,2 @@
+TestCaseNo,TestClassName,TestCaseName,TestDescription,pageTitle,emailId,thankYouText,searchKeyword,searchResult,articlePageHeader
+1,com.esri.tests.wherenextmagazine.WhereNextMagazineHomePageTests,WhereNextMagazinePageTest,WhereNextMagazinePage,"WhereNext Magazine - Location Intelligence for IoT, Big Data & Advanced Analytics",esriAutomation@gmail.com,Email,Jon Breece,Search Results for: Jon Breece,WHERENEXT

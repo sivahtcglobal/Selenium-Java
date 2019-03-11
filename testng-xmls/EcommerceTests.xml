@@ -1,0 +1,1314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ecommerce Test Suite" preserve-order="true" parallel="tests"
+	thread-count="2">
+	<test name='My Esri Renewal Test MyEsriRenewalTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="platform" value="linux" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="MyEsriRenewal" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.MyEsriRenewalTest" />
+		</classes>
+	</test>
+
+	<test name='My Esri Auto Renewal Test MyEsriAutoRenewalTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="platform" value="linux" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="2" />
+		<parameter name="endRow" value="2" />
+		<groups>
+			<run>
+				<include name="MyEsriAutoRenewal" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.MyEsriAutoRenewalTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On US EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="platform" value="linux" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="3" />
+		<parameter name="endRow" value="3" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test> 
+
+	<test name='Ecommerce Test On US EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="platform" value="linux" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="4" />
+		<parameter name="endRow" value="4" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+ 
+	 <test name='Ecommerce Test On US EcommerceQuantityValidationTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="platform" value="linux" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="5" />
+		<parameter name="endRow" value="5" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On US EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="platform" value="linux" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="6" />
+		<parameter name="endRow" value="6" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On US EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="7" />
+		<parameter name="endRow" value="7" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+	 <test name='Ecommerce Test On Australia EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="8" />
+		<parameter name="endRow" value="8" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Australia EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="9" />
+		<parameter name="endRow" value="9" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Australia EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="10" />
+		<parameter name="endRow" value="10" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+
+	<test name='Ecommerce Test On United Kingdom EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="11" />
+		<parameter name="endRow" value="11" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On United Kingdom EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="12" />
+		<parameter name="endRow" value="12" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On United Kingdom EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="13" />
+		<parameter name="endRow" value="13" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On United Kingdom EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="14" />
+		<parameter name="endRow" value="14" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Denmark EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="15" />
+		<parameter name="endRow" value="15" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Denmark EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="16" />
+		<parameter name="endRow" value="16" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Denmark EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="17" />
+		<parameter name="endRow" value="17" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Sweden EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="18" />
+		<parameter name="endRow" value="18" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+
+	<test name='Ecommerce Test On Sweden EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="19" />
+		<parameter name="endRow" value="19" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Sweden EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="20" />
+		<parameter name="endRow" value="20" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Sweden EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="21" />
+		<parameter name="endRow" value="21" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Panama English EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="22" />
+		<parameter name="endRow" value="22" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Panama English EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="23" />
+		<parameter name="endRow" value="23" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Panama English EcommerceQuantityValidationTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="24" />
+		<parameter name="endRow" value="24" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Panama English EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="25" />
+		<parameter name="endRow" value="25" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Panama English EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="26" />
+		<parameter name="endRow" value="26" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+
+	<test name='Ecommerce Test On  Panama Spanish EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="27" />
+		<parameter name="endRow" value="27" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On  Panama Spanish EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="28" />
+		<parameter name="endRow" value="28" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On  Panama Spanish EcommerceQuantityValidationTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="29" />
+		<parameter name="endRow" value="29" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On  Panama Spanish EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="30" />
+		<parameter name="endRow" value="30" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On  Panama Spanish EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="31" />
+		<parameter name="endRow" value="31" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+
+	<test name='Ecommerce Test On Germany English EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="32" />
+		<parameter name="endRow" value="32" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Germany English EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="33" />
+		<parameter name="endRow" value="33" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Germany English EcommerceQuantityValidationTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="34" />
+		<parameter name="endRow" value="34" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Germany English EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="35" />
+		<parameter name="endRow" value="35" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Germany English EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="36" />
+		<parameter name="endRow" value="36" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Germany German EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="37" />
+		<parameter name="endRow" value="37" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Germany German EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="38" />
+		<parameter name="endRow" value="38" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Germany German EcommerceQuantityValidationTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="39" />
+		<parameter name="endRow" value="39" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Germany German EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="40" />
+		<parameter name="endRow" value="40" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Germany German EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="41" />
+		<parameter name="endRow" value="41" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Colombia English EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="42" />
+		<parameter name="endRow" value="42" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Colombia English EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="43" />
+		<parameter name="endRow" value="43" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Colombia English EcommerceQuantityValidationTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="44" />
+		<parameter name="endRow" value="44" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Colombia English EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="45" />
+		<parameter name="endRow" value="45" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Colombia English EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="46" />
+		<parameter name="endRow" value="46" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Colombia Spanish EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="47" />
+		<parameter name="endRow" value="47" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Colombia Spanish EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="48" />
+		<parameter name="endRow" value="48" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Colombia Spanish commerceQuantityValidationTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="49" />
+		<parameter name="endRow" value="49" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Colombia Spanish EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="50" />
+		<parameter name="endRow" value="50" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Colombia Spanish EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="51" />
+		<parameter name="endRow" value="51" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Romania EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="52" />
+		<parameter name="endRow" value="52" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Romania EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="53" />
+		<parameter name="endRow" value="53" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+
+	<test name='Ecommerce Test On Romania EcommerceQuantityValidationTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="54" />
+		<parameter name="endRow" value="54" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+
+
+	<test name='Ecommerce Test On Romania EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="55" />
+		<parameter name="endRow" value="55" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+
+	<test name='Ecommerce Test On Romania EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="56" />
+		<parameter name="endRow" value="56" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On On France EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="57" />
+		<parameter name="endRow" value="57" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On On France EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="58" />
+		<parameter name="endRow" value="58" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On On FranceEcommerceQuantityValidationTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="59" />
+		<parameter name="endRow" value="59" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On On France EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="60" />
+		<parameter name="endRow" value="60" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On On France EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="61" />
+		<parameter name="endRow" value="61" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland English EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="62" />
+		<parameter name="endRow" value="62" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland English EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="63" />
+		<parameter name="endRow" value="63" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland English EcommerceQuantityValidationTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="64" />
+		<parameter name="endRow" value="64" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland English EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="65" />
+		<parameter name="endRow" value="65" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland English EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="66" />
+		<parameter name="endRow" value="66" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland French EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="67" />
+		<parameter name="endRow" value="67" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland French EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="68" />
+		<parameter name="endRow" value="68" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland French EcommerceQuantityValidationTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="69" />
+		<parameter name="endRow" value="69" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland French EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="70" />
+		<parameter name="endRow" value="70" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland French EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="71" />
+		<parameter name="endRow" value="71" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland German EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="72" />
+		<parameter name="endRow" value="72" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland German EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="73" />
+		<parameter name="endRow" value="73" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland German EcommerceQuantityValidationTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="74" />
+		<parameter name="endRow" value="74" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland German EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="75" />
+		<parameter name="endRow" value="75" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Switzerland German EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="76" />
+		<parameter name="endRow" value="76" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Canada English EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="77" />
+		<parameter name="endRow" value="77" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+	
+	<test name='Ecommerce Test On Canada English EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="78" />
+		<parameter name="endRow" value="78" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+	
+	<test name='Ecommerce Test On Canada English EcommerceQuantityValidationTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="79" />
+		<parameter name="endRow" value="79" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+	
+	<test name='Ecommerce Test On Canada English EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="80" />
+		<parameter name="endRow" value="80" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+	
+	<test name='Ecommerce Test On Canada English EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="81" />
+		<parameter name="endRow" value="81" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Test On Canada French EcommerceWithOutLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="82" />
+		<parameter name="endRow" value="82" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+		</classes>
+	</test>
+	
+	<test name='Ecommerce Test On Canada French EcommerceAfterLoginTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="3" />
+		<parameter name="endRow" value="83" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+		</classes>
+	</test>
+	
+	<test name='Ecommerce Test On Canada French EcommerceQuantityValidationTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="84" />
+		<parameter name="endRow" value="84" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+	
+	<test name='Ecommerce Test On Canada French EcommerceDRCartTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="85" />
+		<parameter name="endRow" value="85" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceDRCartTest" />
+		</classes>
+	</test>
+	
+	<test name='Ecommerce Test On Canada French EcommerceNewCustomerTest'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="ecommerce/EcommerceTestData.csv" />
+		<parameter name="startRow" value="86" />
+		<parameter name="endRow" value="86" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceNewCustomerTest" />
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="com.esri.qa.reporting.ExtentReporter" />
+		<listener class-name="com.esri.qa.reporting.ReportListener" />
+	</listeners>
+
+</suite> 
+ 

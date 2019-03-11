@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Image Submission Tests" thread-count="1">
+
+	<test name='ImageSubmissionPortalOnChrome'>
+		<parameter name="bType" value="firefox" />
+		<parameter name="fileName"
+			value="isp/ImageSubPortal.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.esri.tests.isp.ImageSubPortalPageTest" />
+		</classes>
+		
+	</test>
+
+	<listeners>
+		<listener class-name="com.esri.qa.reporting.ExtentReporter" />
+		<listener class-name="com.esri.qa.reporting.ReportListener" />
+	</listeners>
+
+</suite> 

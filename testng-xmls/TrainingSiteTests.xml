@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true" parallel="tests"
+	thread-count="2">
+
+	<test name='ESRI Training - Main Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="training/MainPageData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.esri.tests.training.main.MainPageTest" />
+		</classes>
+	</test>
+
+	<test name='ESRI Training - My Learning Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="training/MyLearningPageData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.esri.tests.training.mylearning.MyLearningPageTest" />
+		</classes>
+	</test>
+
+	<test name='ESRI Catalog Training Site On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="training/TrainingSite.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.esri.tests.training.catalog.CatalogPageTest" />
+		</classes>
+	</test>
+
+	<test name='ESRI Find Training Page Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="training/TrainingSite.csv" />
+		<parameter name="startRow" value="2" />
+		<parameter name="endRow" value="2" />
+		<classes>
+			<class name="com.esri.tests.training.catalog.FindTrainingPageTest" />
+		</classes>
+	</test>
+
+	<test name='ESRI Training Event Schedule Page On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="training/TrainingSite.csv" />
+		<parameter name="startRow" value="3" />
+		<parameter name="endRow" value="3" />
+		<classes>
+			<class name="com.esri.tests.training.catalog.EventSchedulePageTest" />
+		</classes>
+	</test>
+
+	<test name='ESRI Training Learning Plans On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="training/TrainingSite.csv" />
+		<parameter name="startRow" value="4" />
+		<parameter name="endRow" value="4" />
+		<classes>
+			<class name="com.esri.tests.training.catalog.LearningPlansPageTest" />
+		</classes>
+	</test>
+
+	<test name='ESRI Training Locations Page On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="training/TrainingSite.csv" />
+		<parameter name="startRow" value="5" />
+		<parameter name="endRow" value="5" />
+		<classes>
+			<class name="com.esri.tests.training.catalog.LocationsPageTest" />
+		</classes>
+	</test>
+
+	<test name='ESRI Training Course Registration Page On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="training/TrainingSite.csv" />
+		<parameter name="startRow" value="6" />
+		<parameter name="endRow" value="6" />
+		<classes>
+			<class name="com.esri.tests.training.catalog.CourseRegistrationPageTest" />
+		</classes>
+	</test>
+
+	<test name='ESRI Training - Certification Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="training/CertificationPageData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+
+		<classes>
+			<class name="com.esri.tests.training.certification.CertificationPageTest" />
+		</classes>
+	</test>
+
+	<test name='ESRI Training Help Page On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="fileName" value="training/TrainingSite.csv" />
+		<parameter name="startRow" value="7" />
+		<parameter name="endRow" value="7" />
+		<classes>
+			<class name="com.esri.tests.training.help.HelpPageTest" />
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="com.esri.qa.reporting.ExtentReporter" />
+		<listener class-name="com.esri.qa.reporting.ReportListener" />
+	</listeners>
+
+</suite>

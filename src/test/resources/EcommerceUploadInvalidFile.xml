@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ecommerce Test Suite" preserve-order="true" parallel="tests"
+	thread-count="2">
+
+	<test name='MYEsriSiteHomeTestOnchromeForESRIAdmin'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="bVersion" value="" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="fileName"
+			value="src/test/resources/DashboardMyProfileTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.esri.tests.myesri.dashboard.DashboardTest" />
+			<class name="com.esri.tests.myesri.myprofile.MyProfileTest" />
+		</classes>
+	</test>
+
+	<test name='MYESRI Smoke Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="bVersion" value="" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="fileName"
+			value="src/test/resources/MyOrganizationTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="Transactions" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.myesri.myorganization.TransactionsTest" />
+		</classes>
+	</test>
+
+	<test name='WhereNext Magazine Smoke Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="bVersion" value="" />
+		<parameter name="platform" value="windows" />
+		<parameter name="fileName"
+			value="src/test/java/com/esri/tests/wherenextmagazine/WhereNextMagazineTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<parameter name="url"
+			value="https://www.esri.com/about/newsroom/publications/wherenext/" />
+		<groups>
+			<run>
+				<include name="Where-Next-Magazine" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="com.esri.tests.wherenextmagazine.WhereNextMagazineHomePageTests" />
+		</classes>
+	</test>
+
+	<test name='WhereNext Magazine Footers Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="bVersion" value="" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="fileName"
+			value="src/test/java/com/esri/tests/esrinew/FootersTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<parameter name="url"
+			value="https://www.esri.com/about/newsroom/publications/wherenext/" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.esri.tests.esrinew.FooterLinksTest" />
+		</classes>
+	</test>
+
+	<test name='WhereNext Magazine Social links Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="bVersion" value="" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="fileName"
+			value="src/test/java/com/esri/tests/esrinew/EsriSocialLinksTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<parameter name="url"
+			value="https://www.esri.com/about/newsroom/publications/wherenext/" />
+		<groups>
+			<run>
+				<include name="Regressions" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.esri.tests.esrinew.SocialLinksTest" />
+		</classes>
+	</test>
+
+	<test name='ESRI Training Smoke Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="bVersion" value="" />
+		<parameter name="platform" value="" />
+		<parameter name="fileName"
+			value="src/test/java/com/esri/tests/training/mylearning/MyLearningPageData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="TrainingSite" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.training.mylearning.MyLearningPageTest" />
+		</classes>
+	</test>
+
+
+	<test name='ESRI Training Course Registration Page On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="bVersion" value="" />
+		<parameter name="platform" value="" />
+		<parameter name="fileName" value="src/test/resources/TrainingSite.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.esri.tests.training.catalog.CourseRegistrationPageTest" />
+		</classes>
+	</test>
+	
+	<test name='ESRI Training - Main Tests On Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="bVersion" value="" />
+		<parameter name="platform" value="" />
+		<parameter name="fileName"
+			value="src/test/java/com/esri/tests/training/main/MainPageData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="TrainingSite" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.training.main.MainPageTest" />
+		</classes>
+	</test>
+
+	<test name='Ecommerce Tests on Chrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="bVersion" value="" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="fileName" value="src/test/resources/EcommerceTestData.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="2" />
+		<groups>
+			<run>
+				<include name="AfterLogin" />
+				<include name="WithOutLogin" />
+				<include name="ProductQuantity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.esri.tests.ecommerce.EcommerceWithOutLoginTest" />
+			<class name="com.esri.tests.ecommerce.EcommerceAfterLoginTest" />
+			<class name="com.esri.tests.ecommerce.EcommerceQuantityValidationTest" />
+		</classes>
+	</test>
+
+	<test name='ImageSubmissionPortalOnChrome'>
+		<parameter name="bType" value="chrome" />
+		<parameter name="bVersion" value="" />
+		<parameter name="platform" value="" />
+		<parameter name="url"
+			value="http://www.esri.com/events/image-submissions#/home" />
+		<parameter name="fileName"
+			value="src/test/java/com/esri/tests/isp/ImageSubPortal.csv" />
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<groups>
+			<run>
+				<include name="Image-submission-portal" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.esri.tests.isp.ImageSubPortalPageTest" />
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="com.esri.qa.reporting.ExtentReporter" />
+		<listener class-name="com.esri.qa.reporting.ReportListener" />
+	</listeners>
+
+</suite> 
+ 
